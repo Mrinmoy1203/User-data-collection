@@ -5,4 +5,5 @@ from django.shortcuts import get_object_or_404
 urlpatterns=[
     path('signup',views.SignUp.as_view()),
     path('signup/<int:pk>',views.SingleUserView.as_view()),
+    path('login/', LoginView.as_view(), name='login'),
 ]
